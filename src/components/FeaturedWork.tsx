@@ -59,10 +59,10 @@ export default function FeaturedWork() {
   };
 
   return (
-    <section id="work" className="py-24 lg:py-36 px-6 md:px-12 w-full max-w-7xl mx-auto relative z-10 min-h-screen">
+    <section id="work" className="py-16 md:py-24 lg:py-36 px-6 md:px-12 w-full max-w-7xl mx-auto relative z-10 min-h-auto">
       
       {/* Editorial Header */}
-      <div className="max-w-3xl mb-24 md:mb-32">
+      <div className="max-w-3xl mb-12 md:mb-24 lg:mb-32">
         <motion.p 
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -5,7 +5,7 @@ export default function About() {
   const y = useTransform(scrollYProgress, [0, 1], [0, -60]);
 
   return (
-    <section id="about" className="relative w-full py-32 lg:py-40 px-6 md:px-12 z-10 min-h-[90vh] flex items-center">
+    <section id="about" className="relative w-full py-16 md:py-32 lg:py-40 px-6 md:px-12 z-10 min-h-auto md:min-h-[90vh] flex items-center">
       <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center gap-16 lg:gap-24">
         {/* Left: Image Portrait */}
         <motion.div 
@@ -17,11 +17,15 @@ export default function About() {
           className="w-full md:w-1/2 relative group hover-lift"
         >
           <div className="aspect-[3/4] w-full max-w-md mx-auto md:mr-auto rounded-[2rem] overflow-hidden glass-panel relative">
-            <div className="absolute inset-0 bg-gradient-to-tr from-secondary/40 to-primary/20 mix-blend-overlay z-10 transition-transform duration-[1.5s] ease-out group-hover:scale-105"></div>
-            <div className="absolute inset-0 flex items-center justify-center text-text-dark/40 font-sans text-xs uppercase tracking-[0.2em] font-semibold transition-transform duration-[1.5s] ease-out group-hover:scale-105 z-20">
-              Portrait Image
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/5 z-30 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-stone-900/10 to-transparent mix-blend-overlay z-10"></div>
+            <img 
+              src="https://i.postimg.cc/9X6gRYYz/IMG-1120.jpg" 
+              alt="Shivani Sinha - Content Creator" 
+              loading="lazy"
+              referrerPolicy="no-referrer"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/10 z-20 pointer-events-none"></div>
           </div>
         </motion.div>
 
